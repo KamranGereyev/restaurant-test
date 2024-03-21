@@ -48,7 +48,6 @@ const Menu = () => {
     const handleSubmit = e => {
         e.preventDefault();
         const formData = new FormData(e.target);
-        console.log("formData", formData)
         const bookingData = {
             id: selectedRestaurant.id,
             date: formData.get("date"),
@@ -56,7 +55,6 @@ const Menu = () => {
             people: formData.get("people"),
         };
 
-        console.log('bookingData', bookingData)
         const existingBookings = bookings[selectedRestaurant.id] || [];
         const conflictingBooking = existingBookings.find(
             booking => booking.date === bookingData.date && booking.time === bookingData.time,

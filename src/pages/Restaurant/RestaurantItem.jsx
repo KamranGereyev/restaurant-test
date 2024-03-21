@@ -7,9 +7,7 @@ const RestaurantItem = () => {
     const filteredRestaurant = allRestaurant.filter(restaurant => restaurant.id === parseInt(id));
 
     const storedBookings = localStorage.getItem("bookings");
-    console.log("storedBookings", storedBookings)
     const bookingsSave = storedBookings ? Object.values(JSON.parse(storedBookings)).flat() : [];
-    console.log("bookingsSave", bookingsSave)
     return (
         <div className="restaurant-item">
             <div className="restaurant-item-wrap">
