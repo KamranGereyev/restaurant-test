@@ -1,0 +1,35 @@
+.layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    border-right: 1px solid lightgoldenrodyellow;
+    width: 10%;
+}
+
+.content {
+    width: 90%;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 10px 0 0;
+}
+
+.menu-item {
+    text-decoration: none;
+    color: cadetblue;
+}
+
+.no-active {
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 760px) {
+    .sidebar {
+        width: 15%;
+    }
+}

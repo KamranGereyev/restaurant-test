@@ -1,0 +1,135 @@
+#root {
+    height: 100vh;
+    padding: 1rem;
+}
+
+.wrapper {
+    /*width: 1280px;*/
+}
+.wrapper-search {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.wrapper-search-reserv-info {
+    display: flex;
+    justify-content: end;
+    width: 10%;
+
+    span {
+        cursor: pointer;
+    }
+    span:hover {
+        color: blue;
+    }
+}
+.wrapper-body {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.wrapper-body-item {
+    display: flex;
+    width: 290px;
+    flex-direction: column;
+    margin: 5px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+.wrapper-body-item-image {
+    padding: 5px;
+    display: flex;
+}
+.wrapper-body-item-image-wrap {
+    flex-grow: 1;
+}
+.wrapper-body-item-image-img {
+    width: 280px;
+    height: 280px;
+    background: white;
+}
+.wrapper-body-item-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+
+    button {
+        border-radius: 10px;
+        padding: 5px;
+        background: #242424;
+        border: none;
+        cursor: pointer;
+    }
+
+    button:hover {
+        color: blue;
+    }
+}
+.wrapper-body-item-footer-link {
+    text-decoration: none;
+    color: cadetblue
+}
+.modal-body-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.close {
+    color: black;
+    cursor: pointer;
+}
+.modal-body-name {
+    font-size: 20px;
+    color: black;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+
+    label {
+        color: #242424;
+    }
+    input {
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+    button {
+        display: flex;
+        justify-content: center;
+        width: 250px;
+        margin: 0 auto;
+        cursor: pointer;
+    }
+}
+.modal-body-head {
+    display: flex;
+    justify-content: space-between;
+}
+.no-bookings {
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.booking-info-wrap-name {
+    color: black;
+}
+.booking-info-wrap-item {
+    color: black;
+}
+
+@media (max-width: 760px) {
+    .wrapper-search {
+        display: flex;
+        flex-direction: column;
+    }
+    .wrapper-search-reserv-info {
+        width: auto;
+        justify-content: center;
+        padding-top: 20px;
+    }
+}
+

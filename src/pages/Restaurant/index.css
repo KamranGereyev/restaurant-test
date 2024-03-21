@@ -1,0 +1,43 @@
+.restaurant-item {
+    display: flex;
+}
+.restaurant-item-wrap {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+
+.restaurant-item-booking-save {
+    width: 50%;
+}
+.restaurant-item-booking-save-brom {
+    border-bottom: 2px solid lightgoldenrodyellow;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+.restaurant-item-booking-save-about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+.restaurant-item-wrap-left-name {
+    padding-bottom: 10px;
+    font-size: 30px;
+    color: lightgoldenrodyellow;
+}
+.restaurant-item-wrap-left-img-wrap {
+    margin-bottom: 20px;
+}
+
+.restaurant-item-wrap-left-img-wrap-image {
+    width: 200px;
+    height: 200px;
+    background: white;
+}
+.empty {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
